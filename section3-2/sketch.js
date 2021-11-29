@@ -1,6 +1,7 @@
 // テキスト「アニメーションの基本」
 let x, y, vx, vy;
 const g = 1; // 重力加速度
+// 単位がわからんから、重力加速度が「１」とされてるのが違和感感じるんよな
 const vyMax = 30;
 
 function setup(){
@@ -19,6 +20,7 @@ function draw(){
 
   // 重力（コメント機能でオンオフ切り替えて実行してみましょう）
   vy = constrain(vy + g, -vyMax, vyMax);
+  // constrainでvyの数値を制限している
 
   // 端の処理パターン (1) 反対側から出てくる
   // if(x > width){ x = 0; }

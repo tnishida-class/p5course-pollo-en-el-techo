@@ -31,3 +31,5 @@ function draw(){
   }
 
 }
+
+// 難しい
